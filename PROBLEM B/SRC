@@ -1,0 +1,24 @@
+// Problem B
+// Name : Saisankavi P
+// Reg No : 113024148085
+
+interface Harvestable {
+    void harvest();
+}
+
+class WheatCrop implements Harvestable {
+
+    public void harvest() {
+        System.out.println("Wheat crop is ready for harvesting.");
+        System.out.println("Harvesting wheat crop...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        WheatCrop wheat = new WheatCrop();
+
+        wheat.harvest();
+    }
+}
