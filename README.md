@@ -1,55 +1,49 @@
 # saisankavi-oop-IA1-
-Harvestable Interface – WheatCrop
+Problem B: Harvestable Interface – WheatCrop
 
-📌 Project Title
+Student Details
 
-Create an Interface Harvestable with Method "harvest()" and Implement it in a Class "WheatCrop"
+- Name: Saisankavi P
+- Register Number: 113024148085
+- Problem: B
 
-📖 Description
+1. Title
 
-This Java program demonstrates the concept of interfaces and implementation in Object-Oriented Programming.
+Create an interface "Harvestable" with method "harvest()". Implement it in a class "WheatCrop".
 
-An interface named "Harvestable" is created with a method called "harvest()". The "WheatCrop" class implements this interface and provides the implementation for the "harvest()" method.
+2. Objective
 
-The program shows how a class can use an interface to achieve abstraction and define a common behavior.
+To understand the concept of interfaces in Java and implement an interface method in a class.
 
-🎯 Objective
+3. Description
 
-- To understand the concept of interfaces in Java.
-- To implement an interface method in a class using the "implements" keyword.
+This Java program demonstrates the use of an interface named "Harvestable". The interface contains a method called "harvest()". The "WheatCrop" class implements the interface and provides the implementation of the "harvest()" method.
 
-🧠 Concepts Used
+When the program runs, it creates a "WheatCrop" object and calls the "harvest()" method to display the harvesting messages.
 
-1. Interface
+4. Concepts Used
 
-An interface in Java is used to define a set of methods that a class must implement.
+Interface
 
-In this program:
+An interface is a blueprint that defines methods a class must implement. In this program, the "Harvestable" interface contains the "harvest()" method.
 
-interface Harvestable {
-    void harvest();
-}
+Implements Keyword
 
-The "Harvestable" interface contains the "harvest()" method.
+The "implements" keyword is used to implement an interface in a class.
 
-2. Implements Keyword
+Method Overriding
 
-The "implements" keyword is used when a class provides the implementation of an interface.
+The "WheatCrop" class provides the implementation of the "harvest()" method declared in the "Harvestable" interface.
 
-class WheatCrop implements Harvestable
+Object Creation
 
-This means that "WheatCrop" must provide the implementation of the "harvest()" method.
+An object of the "WheatCrop" class is created in the "main()" method to call the harvesting method.
 
-3. Method Overriding
+5. Java Program
 
-The "WheatCrop" class overrides the "harvest()" method and provides its own behavior.
-
-@Override
-public void harvest() {
-    System.out.println("Wheat crop is ready for harvesting.");
-}
-
-💻 Program
+// Problem B
+// Name : Saisankavi P
+// Reg No : 113024148085
 
 interface Harvestable {
     void harvest();
@@ -57,9 +51,9 @@ interface Harvestable {
 
 class WheatCrop implements Harvestable {
 
-    @Override
     public void harvest() {
         System.out.println("Wheat crop is ready for harvesting.");
+        System.out.println("Harvesting wheat crop...");
     }
 }
 
@@ -72,85 +66,55 @@ public class Main {
     }
 }
 
-⚙️ How the Program Works
+6. Algorithm
 
-1. The "Harvestable" interface is created.
-2. The interface contains the abstract method "harvest()".
-3. The "WheatCrop" class implements the "Harvestable" interface.
-4. The "harvest()" method is overridden inside the "WheatCrop" class.
-5. An object of "WheatCrop" is created in the "main()" method.
-6. The "harvest()" method is called using the object.
-7. The program displays the harvesting message.
+1. Start the program.
+2. Create an interface named "Harvestable" with a method "harvest()".
+3. Create a class named "WheatCrop" that implements the "Harvestable" interface.
+4. Define the "harvest()" method inside the "WheatCrop" class.
+5. Display the message "Wheat crop is ready for harvesting."
+6. Display the message "Harvesting wheat crop..."
+7. Create an object of the "WheatCrop" class.
+8. Call the "harvest()" method using the object.
+9. Stop the program.
 
-🔄 Program Flow
-
-Start
-  ↓
-Create Harvestable Interface
-  ↓
-Declare harvest() Method
-  ↓
-Create WheatCrop Class
-  ↓
-Implement Harvestable Interface
-  ↓
-Override harvest() Method
-  ↓
-Create WheatCrop Object
-  ↓
-Call harvest()
-  ↓
-Display Output
-  ↓
-End
-
-🖥️ Output
+7. Output
 
 Wheat crop is ready for harvesting.
+Harvesting wheat crop...
 
-📁 Project Structure
+8. Sample Output Screenshot
+
+The program output can be captured from the Java terminal or Google Colab and uploaded to the repository as an image.
+
+9. How to Run
+
+Requirements
+
+- Java Development Kit (JDK)
+- Java-supported IDE or terminal
+
+Compile the Program
+
+Save the program as "Main.java" and run:
+
+javac Main.java
+
+Execute the Program
+
+java Main
+
+10. Project Structure
 
 Harvestable-WheatCrop/
 │
 ├── Main.java
 └── README.md
 
-🛠️ Requirements
+11. Real-World Application
 
-- Java JDK 8 or above
-- Any Java-supported IDE or text editor
-- Command Prompt / PowerShell / Terminal
+The "Harvestable" interface can be used to define common harvesting behavior for different crops. Other classes such as "RiceCrop" and "CornCrop" can implement the same interface and provide their own harvesting methods.
 
-▶️ How to Run
+12. Conclusion
 
-Step 1: Compile the program
-
-Open the terminal in the project folder and run:
-
-javac Main.java
-
-Step 2: Run the program
-
-java Main
-
-Expected Output
-
-Wheat crop is ready for harvesting.
-
-🌾 Real-World Application
-
-The concept can be extended to different types of crops. For example, "RiceCrop", "CornCrop", and "SugarcaneCrop" can also implement the "Harvestable" interface and provide their own harvesting behavior.
-
-This demonstrates how interfaces can be used to define common behavior while allowing different classes to implement that behavior in their own way.
-
-📚 Conclusion
-
-This program demonstrates how to create and implement an interface in Java. The "Harvestable" interface defines the "harvest()" behavior, while the "WheatCrop" class provides its implementation. This helps understand abstraction, interfaces, and method overriding in Java.
-
-👨‍💻 Author
-
-SAISANKAVI
-
----
-
-⭐ This project is created for learning and demonstrating Java Object-Oriented Programming concepts.
+The program successfully demonstrates the creation and implementation of an interface in Java. The "WheatCrop" class implements the "Harvestable" interface and displays the harvesting messages when the "harvest()" method is called.
